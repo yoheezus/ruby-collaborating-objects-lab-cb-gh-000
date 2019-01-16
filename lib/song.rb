@@ -10,7 +10,7 @@ class Song
         stripped = file_name.split(" - ")
         name = stripped[1]
         artist = stripped[0]
-        song = Song.new(filename)
+        song = Song.new(name)
         song.artist = artist
     end
 

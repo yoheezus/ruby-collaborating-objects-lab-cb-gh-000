@@ -7,10 +7,8 @@ class MP3Importer
     end
 
     def files
-        unclean_files = Dir[@path]
-        clean_files = unclean_files.each do |file|
-            file.chomp(@path + "/")
-        end
+        files = Dir[@path].each {|file| file.chomp(@path)}
+    end
 
     end
 

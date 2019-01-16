@@ -7,7 +7,7 @@ class MP3Importer
     end
 
     def files
-        files = Dir[@path].each {|file| file.chomp(@path)}
+        files = Dir.entries(@path)
     end
 
     def import

@@ -1,8 +1,7 @@
 class MP3Importer
 
-    def initialize(directory)
-        @filenames = filenames
-        test = Dir["./spec/fixtures/mp3s/*.mp3"]
+    def initialize(file_path)
+        @file_path = Dir["file_path"]
     end
 
     def files

@@ -23,10 +23,14 @@ class Artist
 
     def self.find_or_create_by_name(name)
 
+
     end
 
     def songs
         @songs
     end
 
+    def self.all
+        @@all
+    end
 end

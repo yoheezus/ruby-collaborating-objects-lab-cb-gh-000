@@ -26,7 +26,7 @@ class Artist
     end
 
     def songs
-        @@all
+        @songs
     end
 
 end

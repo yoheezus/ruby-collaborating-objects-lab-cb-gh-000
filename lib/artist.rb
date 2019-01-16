@@ -14,7 +14,7 @@ class Artist
     end
 
     def print_songs
-        @@all.each{ |song| puts song }
+        @songs.each{ |song| puts song }
     end
 
     def self.save

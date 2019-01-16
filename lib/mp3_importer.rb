@@ -7,7 +7,7 @@ class MP3Importer
     end
 
     def files
-        files = Dir.entries(@path)
+        files = Dir.foreach(@path) { |file| file.include?(".mp3") }
     end
 
     def import

@@ -10,8 +10,6 @@ class MP3Importer
         files = Dir[@path].each {|file| file.chomp(@path)}
     end
 
-    end
-
     def import
 
     end
